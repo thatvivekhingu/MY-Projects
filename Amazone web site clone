@@ -1,0 +1,537 @@
+index.html file code : 
+
+ <!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML With Ai</title>
+  <link href="style.css" rel="style sheet">
+</head>
+<body>
+
+  <script src="code.js"></script> 
+</body>
+
+</html> 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+
+<div id="navbar"> 
+ 
+                              <div class="nav-logo ">
+
+                                                   <div class="logo border"> </div>
+                              </div>
+<div id="space border">
+                                                    <div class="delivery border">
+                                                   <p class="delivery"> Deliver to</p>
+                                                    
+
+                                                         <div class="add-icon">
+                                                         <i class="fa-solid fa-location-dot"></i>
+                                                         <p class="in">India </p>
+                                                          </div>  
+                                                          </div>
+                                                          </div>
+
+                                                          <div class="nav-search">
+
+          <select class="select-search">
+            <option>All</option>
+            <option>Mens</option>
+            <option>Womens</option> 
+            <option>Child</option>
+            <option>Electronics iteam</option>
+            <option>Household</option>
+          </select>
+          <input placeholder="Search Amazon" class="search-input">
+
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="flag border ">
+          <i class="fa-solid fa-indian-rupee-sign"></i>
+         <P class="india"> India</P>
+        </div>
+  <div class="signin border">
+    <p><span>Hello,Sign in</span></p>
+    <p class="Account">Account&Lists</p>
+  </div>
+  <div class="signin border">
+    <p><span>Returns</span></p>
+    <p class="Account">& Orders</p>
+  </div>
+
+
+<div class="shopping border">
+
+  <div class="cart ">
+ <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+    <div class="cart-icons">
+    <p class="cart-name">Cart</p>
+  </div>
+
+  </div>          
+
+</div>
+
+
+
+
+
+<div class="panel">
+
+  <div class="All border">
+    <i class="fa-solid fa-bars"></i>
+    All
+  </div>
+
+  <div class="ops">
+    <p class="border">Today's deals</p>
+    <p  class="border">Customer service</p>
+    <p  class="border">Registry</p>
+    <p  class="border">Gift card</p>
+    <p  class="border">Sell</p>
+  </div>
+
+  <div class="shop border ">
+    Shop deals in Registry
+  </div>
+
+
+</div>
+<div class="hero">
+<div class="hero-msg">
+
+  <p>You are in amazon.com.You can also shop in Amazon india millions of product with fast local delivery .<a> Click here to go amazon.in</a></p>
+
+</div>
+</div>
+<div class="shop-section">
+
+  <div class="box1 box">
+      
+  <div class="box-content">
+    <h2>Minimum 50% off | Indoor plants</h2>
+    <div class="box-img" style="background-image: url('box1.jpg');"></div>
+
+    <p>See more</p>
+ </div>
+  
+  </div>
+  <div class="box2 box"> 
+         <div class="box-content">
+            <h2>Up to 60% off | Car, bike parts & accessories</h2>
+           <div class="box-img" style="background-image: url('box6.jpg');"></div>
+
+           <p>See more</p>
+           </div>
+  </div>
+
+  <div class="box3 box">
+    <div class="box-content">
+      <h2>Starting ₹99 | Start your fitness journey</h2>
+      <div class="box-img" style="background-image: url('box3.jpg');"></div>
+  
+      <p>See more</p>
+    </div>
+
+  </div>
+  <div class="box4 box">
+
+    <div class="box-content">
+      <h2>
+        Minimum 40% off | Furniture stores nearby</h2>
+      <div class="box-img" style="background-image: url('box4b.jpg');"></div>
+  
+      <p>See more</p>
+    </div>
+
+  </div>
+  <div class="box5 box">
+      
+    <div class="box-content">
+      <h2> 50% off on mobile accessories</h2>
+      <div class="box-img" style="background-image: url('box8.webp');"></div>
+  
+      <p>See more</p>
+   </div>
+    
+    </div>
+    <div class="box6 box"> 
+           <div class="box-content">
+              <h2>Up to 60% off | Apple phones & accessories</h2>
+             <div class="box-img" style="background-image: url('box2.jpg');"></div>
+  
+             <p>See more</p>
+             </div>
+    </div>
+  
+    <div class="box7 box">
+      <div class="box-content">
+        <h2>Starting ₹1,64,000 | Special offer now days</h2>
+        <div class="box-img" style="background-image: url('box7.jpg');"></div>
+    
+        <p>See more</p>
+      </div>
+  
+    </div>
+    <div class="box8 box">
+  
+      <div class="box-content">
+        <h2>
+          Mobile cover 80% off in all parts </h2>
+        <div class="box-img" style="background-image: url('box5.jpg');"></div>
+    
+        <p>See more</p>
+      </div>
+  
+    </div>
+</div>
+<footer>
+<div class="foot-panel1">
+  Back to Top
+</div>
+<div class="foot-panel2">
+  <ul>
+    <p> Get to know us </p>
+    <a>About Us</a>
+    <a>Careers</a>
+    <a>Press Releases</a>
+    <a>Amazon Science</a>
+  </ul>
+  <ul>
+    <p> 	
+      Connect with Us </p>
+    <a>Facebook</a>
+    <a>Twitter</a>
+    <a>Inastagram</a> 
+  </ul>
+  <ul>
+    <p>Make Money with Us</p>
+    <a>Sell on Amazon</a>
+    <a>Sell under Amazon Accelerator</a>
+    <a>Protect and Build Your Brand</a>
+    <a>Amazon Global Selling</a>
+    <a>Become an Affiliate</a>
+    <a>Fulfilment by Amazon</a>
+    <a>Advertise Your Products</a>
+    <a>Amazon Pay on Merchants</a>
+  </ul>
+  <ul>
+    <p>Let Us Help You</p>
+    <a>COVID-19 and Amazon</a>
+    <a>Your Account</a>
+    <a>Returns Centre</a>
+    <a>Recalls and Product Safety Alerts</a>
+    <a>100% Purchase Protection</a>
+    <a>Amazon App Download</a>
+    <a>Help</a>
+  </ul>
+</div>
+<div class="foot-panel4">
+  <div class="pages">
+   <p> <a>Conditions of Use & Sale
+    </a>
+    <a>Privacy Notice</a>
+    <a>Interest-Based Ads</a></p>
+  </div>
+  <div class="copy">
+    <a>© 1996-2024, Amazon.com, Inc. or its affiliates</a>
+  </div>
+</div>
+<div class="foot-panel3">
+  <div class="logo1">
+  </div>
+</div>
+</footer>
+</body>
+</html>
+
+style.css code ://////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+*{
+    margin: 0;
+    border: border-box;
+    font-family: Arial;
+  }
+  
+  #navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  
+  }
+  
+  
+  .nav-logo{
+    height: 50px;
+    width: 100px;
+    color: white;
+  }
+  
+  .logo{
+    background-image: url("corner.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+  
+  }
+  .border{
+    border: 1.5px solid transparent;
+  }
+  .border:hover{
+    border: 1.5px solid white;
+    
+    
+  }
+  #space{
+  
+  .delivery {
+  color: #cccccc;
+  font-size: 0.80rem;
+  margin-left: 15px;
+  }
+  .in{
+    
+    font-size: 1rem;
+    margin-left: 3px;
+  
+  }
+  }
+  
+  .add-icon{
+    display: flex;
+    align-items: center;
+  
+  }
+    .nav-search{
+      border-radius: 5px;
+   margin-left: 4px;
+      display: flex;
+      justify-content: space-evenly;
+      width: 550px;
+      height: 35px;
+      background-color: pink;
+    
+    }
+    .search-icon{
+      background-color: orange;
+      border-radius: 5px;
+      width: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #0f1111;
+    }
+  .select-search{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+  }
+  .search-input{
+    width: 100%;
+    font-size: 1rem;
+    border:none;
+  }
+  
+  .flag{
+    display: flex;
+    font-size: 30px;
+    .india{
+      margin-left: 2px;
+     
+    }
+  }
+  
+  span{
+    font-size: 0.7rem;
+  }
+  .Account{
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  
+  .cart-icons{
+    
+    font-size: 0.85rem;
+  
+  }
+  .shopping{
+  display: flex;
+  align-items: center;
+  
+  
+  }
+  .cart{
+    font-size: 2rem;
+  }
+  
+  .panel{
+    background-color: #222f2d;
+    color: white;
+    
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    
+  } 
+  .ops p{
+    display: inline;
+    margin-left: 10px;
+  }
+  .ops{
+    width: 70%;
+    font-size: 0.85rem ;
+   
+  }
+  
+  .All{
+    
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  .hero{
+    background-image: url("display.jpg");
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+  }
+  .hero-msg{
+    color: black;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 35px;
+  }
+  .hero-msg a{
+    color: #007185;
+  }
+  .shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(249, 225, 225);
+  }
+  .box{
+    height: 400px;
+    /* border: 2px solid black; */
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 10px;
+   
+  }
+  .box-img{
+    height: 300px; 
+    background-size: cover;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .box-content p{
+    color: #007185;
+  }
+  footer{
+    margin-top: 15px;
+  }
+  .foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+  }
+  .foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+  }
+  
+  ul p{
+    font-size: 1rem;
+    margin-top: 40px;
+    
+  
+  }
+  .foot-panel3{
+    background-color: black;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .logo1{
+    background-image: url("logo.jpeg");
+    background-size: cover;
+    height: 79px;
+    width: 200px;
+   
+  }
+  .foot-panel4{
+    background-color: #222f3d;
+    color: white;
+   height: 80px;
+   padding-top: 25px ;
+  }
+  .pages{
+   
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .copy{
+    padding-top: 5px;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  
