@@ -1,3 +1,5 @@
+jarvis.py file code ://///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 # first install select interpreter .venv (ctrl + shift + p , create virtual environment)
 '''interminal:
 pip install speechrecognition pyaudio  (pyaudio then one space then enter)
@@ -140,3 +142,33 @@ if __name__== "__main__":
             continue
         except Exception as e:
             print(f"Error: {e}")
+
+client.py file code: ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+from openai import OpenAI
+client = OpenAI(api_key="ADD API KEY"
+)
+
+completion = client.chat.completions.create(
+    model="gpt-3.5-turbo",
+    messages=[
+        {"role": "system", "content": "You are a virtual assistant named jarvis skilled in general tasks like Alexa and Google Cloud"},
+        {"role":"user", "content": "what is coding"}
+    ]
+)
+print(completion.choices[0].message.content)
+
+
+music.py code: /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+music = {
+    "hello" :"https://youtube.com/shorts/QC8OLDw9AQE?si=Jcmh1Nl1-ArI7l1C",
+    "wow" : "https://youtu.be/iAIBF2ngbWY?si=Jz5kZHMRo-vmxQ3b",
+    "happy": "https://youtu.be/WVMSjMtPbq0?si=tg81RhRyRUiYrN_1",
+    "sad": "https://youtu.be/OdrOp7JwZiE?si=r4mvuvNYyBwAltfs"
+}
+
+
+//////////////////////////////////////////////////////////// JARVIS PROJECT IS READY ////////////////////////////////////////////////////////////
+
+
