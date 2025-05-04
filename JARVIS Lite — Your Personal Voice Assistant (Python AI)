@@ -1,0 +1,142 @@
+# first install select interpreter .venv (ctrl + shift + p , create virtual environment)
+'''interminal:
+pip install speechrecognition pyaudio  (pyaudio then one space then enter)
+pip install setuptool
+pip install pyttsx3 ()
+pip install pocketsphinx 
+'''
+import speech_recognition as sr
+import webbrowser
+import pyttsx3
+import musicLibrary
+import requests
+import openai
+
+recognizer =sr.Recognizer()
+engine = pyttsx3.init()
+import os
+openai.api_key=  os.getenv("OPENAI_API_KEY") 
+  #(this api cant used bacuase its expire so add new api key)
+
+def speak(text):
+    engine.say(text)
+    engine.runAndWait()
+    engine.setProperty('rate', 150)  # Set speed
+    
+
+
+def ask_openai(question):
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",  # or "gpt-4" if you have access
+            messages=[
+                {"role": "user", "content": question}
+            ]
+        )
+        answer = response['choices'][0]['message']['content']
+        return answer.strip()
+    except Exception as e:
+        return f"Error communicating with OpenAI: {e}"
+
+
+def note_my_words():
+    print("Yeah sure!!")
+    speak("I'm listening, speak your notes.")
+
+    with sr.Microphone() as source:
+          audio = recognizer.listen(source)
+    try:
+        note = recognizer.recognize_google(audio)
+        with open("notes.txt", "a") as f:
+            f.write(note + "\n")
+        print("Note saved:", note)
+        speak("Your note has been saved.")
+    except Exception as e:
+        speak("Sorry, I couldn't understand the note.")
+        print("Error:", e)
+
+
+
+def processCommand(c):
+    if "open google" in c.lower():
+        webbrowser.open("https://google.com")
+
+    elif "open instagram" in c.lower():
+        webbrowser.open("https://instagram.com")
+
+    elif "open github" in c.lower():
+        webbrowser.open("https://github.com")
+
+    elif "open discord" in c.lower():
+        webbrowser.open("https://discord.com")
+    elif "open youtube" in c.lower():
+        webbrowser.open("https://youtube.com")
+    elif c.lower().startswith("play"):
+        song=c.lower().split(" ")[1]
+        link=musicLibrary.music[song]
+        webbrowser.open(link)
+    elif "news" in c.lower():  
+        print("News command detected")
+        r = requests.get("https://newsdata.io/api/1/latest?country=in&apikey= ADD API KEYYYYY  ")
+        if r.status_code == 200:
+            data = r.json()
+            articles = data.get('results', [])          # Sometimes it's 'results' not 'articles'
+            speak("This is the latest news of India")
+            for article in articles[:1]:                # Only read 1 headline
+                print(article.keys())                   # For debugging
+                print(article.get('title', 'No title found'))
+                speak(article.get('title', 'No title found'))
+        else:
+            speak("Sorry, I couldn't fetch the news.")
+    elif "write " in c.lower():
+        note_my_words()
+    
+
+    elif "question" in c.lower() or "ai" in c.lower():
+        speak("What would you like to ask?")
+        with sr.Microphone() as source:
+            audio = recognizer.listen(source)
+        try:
+            query = recognizer.recognize_google(audio)
+            answer = ask_openai(query)
+            print("GPT Answer:", answer)
+            speak(answer)
+        except Exception as e:
+            speak("Sorry, I couldn't understand your question.")
+
+    elif "read my notes" in c.lower():
+        try:
+            with open("notes.txt", "r") as f:
+                notes = f.read()
+                print(notes)
+                speak("Here are your notes.")
+                speak(notes)
+        except FileNotFoundError:
+            speak("You don't have any saved notes.")
+
+
+
+if __name__== "__main__":
+    speak("Jarvis now active.")
+    while True:
+        r = sr.Recognizer()
+        print("Waiting for wake word...")
+
+        try:
+            with sr.Microphone() as source:
+                audio = r.listen(source, timeout=5, phrase_time_limit=5)
+            word = r.recognize_google(audio)
+            print("You said:", word)
+
+            if word.lower() == "jarvis":
+                speak("Hello sir, how can I help you?")
+                with sr.Microphone() as source:
+                    audio = r.listen(source)
+                    command = r.recognize_google(audio)
+                    processCommand(command)
+
+        except sr.WaitTimeoutError:
+            # No need to speak here; just continue listening silently
+            continue
+        except Exception as e:
+            print(f"Error: {e}")
